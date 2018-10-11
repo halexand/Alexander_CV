@@ -1,0 +1,205 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        %
+
+% load packages
+\moderncvstyle{classic}
+\moderncvcolor{grey}
+\usepackage[scale=0.8]{geometry}
+\usepackage{multibib}
+\newcites{ipr,pr,pend}{{InvitedPresentations},{Presentations},{Pending}}
+
+% bold name in citations or wherever it appears
+\def\FormatName#1{%
+  \def\myname{Alexander H}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \textbf{#1}%
+  \else
+    #1%
+  \fi
+}
+
+    %
+
+\name{Harriet}{Alexander}
+
+% personal details
+%\title{CV}
+
+%\address{1 Wilson Road}{Woods Hole, MA 02543}{}%
+%\phone[mobile]{+1~(234)~567~890}
+\email{harriet.xander@gmail.com}
+\homepage{halexand.github.io}
+\social[twitter]{nekton4plankton}
+\social[github]{halexand}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=south, yshift=0.8cm, xshift=6cm] at (current page.south) {\textcolor{color1}{\textit{Last updated \today}}};
+\end{tikzpicture}
+
+\makecvtitle
+
+
+%%%------------------------EDUCATION-----------------------%%%
+
+
+\section{Education}
+\cventry{2016}{PhD, Biological Oceanography}{Massachusetts Institute of Technology -- Woods Hole Oceanographic Joint Program}{Cambridge / Woods Hole, MA}{}{}{}
+\cventry{2010}{BA, Biological Sciences}{Wellesley College}{Wellesley, MA}{\textit{cum laude}}{Departmental Honors in Biological Sciences, Minor in Mathematics}{}{}
+
+
+
+%%%------------------------EXPERIENCE-----------------------%%%
+
+
+\section{Professional Appointments}
+\cventry{2018--\textit{present}}{Assistant Scientist, Biology Department}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}{}
+\cventry{2016--2018}{Postdoctoral Fellow}{University of California, Davis}{Davis, CA}{}{Advisor: Dr. C. Titus Brown}
+\cventry{2016}{Postdoctoral Research Scientist}{Lamont-Doherty Earth Observatory, Columbia University}{Palisades, NY}{}{Advisor: Dr. Sonya Dyhrman}
+% \cventry{2010--2016}{Graduate Student Researcher}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}{Advisor: Dr. Sonya Dyhrman}
+
+
+%%%------------------------PUBLICATIONS-----------------------%%%
+
+
+\section{Publications}
+
+%% Peer reivewed %%
+
+\renewcommand*{\bibliographyhead}[1]{\subsection{Peer-reviewed}}
+
+\nocite{Hu2018, Rouco2018,
+Haley2017, Harke2017, Moniruzzaman2017, Kujawinski2017, Guy-Haim2017,Durden2017,
+Caron2016, Rouco2016,
+Alexander2015a, Alexander2015,
+Fischer2014, Alexander2012, Dyhrman2012}
+\bibliographystyle{cv}
+\bibliography{publications,pending}
+
+
+%% pending %%
+
+\renewcommand*{\bibliographyhead}[1]{\subsection{Pending}}
+
+\nocitepend{Alexander2018b, Johnson2018,Alexander2016, Wurch2016}
+\bibliographystylepend{cv}
+\bibliographypend{pending}
+
+%%%------------------------AWARDS-----------------------%%%
+
+
+\section{Selected Awards and Fellowships}
+\cvitem{2016}{EMBL Travel Award}
+\cvitem{2015}{NSF ECOGEO Workshop Travel Award}
+\cvitem{2015}{OCB Trait-based Ecology Conference Travel Award}
+\cvitem{2014--2015}{Ocean Life Institute Fellowship}
+\cvitem{2014}{OCB Scoping Workshop Travel Award}
+\cvitem{2011--2014}{National Defense Science and Engineering Fellowship}
+\cvitem{2011}{National Science Foundation Graduate Research Fellowship \textit{declined}}
+\cvitem{2010--2011}{MIT Presidential Fellowship}
+\cvitem{2010}{Lucy Allen Branch Prize in Natural History}
+\cvitem{2010}{Jane Harris Schneider Prize in Sculpture}
+
+%%%------------------------INVITEDPRESENTATIONS-----------------------%%%
+
+
+\section{Invited Presentations}
+\renewcommand*{\bibliographyhead}[1]{}
+\nociteipr{*}
+\bibliographystyleipr{cv}
+\bibliographyipr{invitedpresentations}
+
+%%%------------------------PRESENTATIONS-----------------------%%%
+
+
+\section{Selected Abstracts}
+\renewcommand*{\bibliographyhead}[1]{}
+\nocitepr{*}
+\bibliographystylepr{cv}
+\bibliographypr{presentations}
+
+
+%%%------------------------GRANTS-----------------------%%%
+
+
+\section{Grants Awarded}
+
+\cvitem{2012-2015}{``Molecular metabolic fingerprinting to identify drivers of phytoplankton bloom dynamics in the Southern Ocean.'' \textit{Access to the Sea}, Woods Hole Oceanographic Institution. Awarded to \textbf{Alexander, H} and Dyhrman, ST, Co-Principal Investigators. \textbf{Total Award: \$56,917}.}
+\cvitem{2012-2015}{``Metabolic fingerprinting to identify drivers of phytoplankton bloom dynamics in the Southern Ocean.'' \textit{Ocean Ventures Fund}, Woods Hole Oceanographic Institution. Awarded to \textbf{Alexander, H}, Principal Investigators. \textbf{Total Award: \$11,000}.}
+
+
+%%%------------------------TEACHING-----------------------%%%
+
+
+\section{Teaching Experience}
+
+\cventry{July 2017}{Lead Instructor}{Environmental Metagenomics Workshop}{Data Intensive Biology Summer Institute}{}{Organized and taught workshop on environmetnal metagenomic data analysis and interpretation.}
+\cventry{April 2017}{Instructor}{Metagenomic Workshop}{University of California, Santa Cruz}{}{Co-taught workshop on metagenomic data analysis and interpretation.}
+\cventry{Sept. 2016}{Co-instructor}{Metagenomic Workshop}{Scripps Institute of Oceanography}{}{Co-taught workshop on metagenomic data analysis and interpretation.}
+\cventry{Sept. 2015}{Instructor}{\href{https://2016-metagenomics-sio.readthedocs.io/en/latest/}{Software Carpentry Workshop}}{Woods Hole Oceanographic Institution}{}{Organized and taught Software Carpentry course at WHOI, teaching introductory UNIX shell scripting, Python programming, and Git versioning.}
+\cventry{2014}{Teaching Assistant}{Biological Oceanography course}{MIT-WHOI Joint Program}{}{Conducted recitation sections, wrote and graded tests, problem sets, and daily assignments, advised professors on student performance.}
+\cventry{2014}{Guest Lecturer}{Biological Oceanography course}{MIT-WHOI Joint Program}{}{Designed and presented lecture on application of molecular techniques to biological oceanography.}
+\cventry{2007-2010}{Writing Tutor}{Pforzheimer Learning and Teaching Center}{Wellesley College, Wellesley, MA}{}{}
+\cventry{2009-2010}{Tutor and Grader}{Mathematics Department}{Wellesley College, Wellesley, MA}{}{}
+
+%%%------------------------CRUISES-----------------------%%%
+
+
+\section{Research Cruises}
+
+\cventry{2014}{Seasonal Trophic Roles of \textit{Euphasia superba} STRES; NBP14-10}{R/V Nathaniel B. Palmer}{30 November - 29 December}{West Antarctic Peninsula}{Chief Scientist: Edward Durbin}
+\cventry{2013}{Deep Dissolved Organic Matter (DeepDOM; KN210-04)}{R/V Knorr}{25 March - 9 May}{Montevideo, Uruguay to Bridgetown, Barbados}{Chief Scientist: Elizabeth Kujawinski}
+\cventry{2012}{Hawaii Ocean Experiment - Dynamics of Light and Nutrients (HOE-DYLAN 9; KM12-19)}{R/V Kilo Moana}{21 August - 11 September}{Station ALOHA}{Chief Scientist: Sam Wilson}
+\cventry{2012}{Hawaii Ocean Experiment - Dynamics of Light and Nutrients (HOE-DYLAN 7; KM12-17)}{R/V Kilo Moana}{4 -14 August}{Station ALOHA}{Chief Scientist: Sonya Dyhrman}
+
+
+%%%------------------------SERVICE-----------------------%%%
+
+
+\section{Academic Service}
+\subsection{Conferences}
+\cvitem{2017}{Co-chair of session entitled ``Molecular Insights into Adaptive Microbial Physiology'' at ASLO Meeting, Honolulu, HI.}
+\cvitem{2016}{Co-chair of mini-symposium on ``Computational Reproducibility'' at SciPy, Austin, TX.}
+
+
+\subsection{Reviewer}
+\cvitem{Manuscripts}{\textit{ISME Journal}, \textit{Environmental Microbiology}, \textit{Limnology and Oceanography}, \textit{Journal of Phycology}}
+\cvitem{Grants}{NSF, NDSEG Fellowship}
+
+
+\subsection{Committee Membership}
+\cvitem{2012}{Holgar Jannasch Visting Scholar Award Committee}
+
+\section{Outreach}
+\cvitem{2014}{\textbf{Submerge!} New York City marine science festival. Designed and manned booth of hands-on activities focused cycle for WHOI. Estimated more than 4000 people in attendance.}
+\cvitem{2014}{\textbf{Women in Ocean Engineering.} Volunteered weekends to work with middle school age girls, introducing them to engineering concepts in a marine environment.}
+\cvitem{2011-2014}{\textbf{Artistic Oceanographer Program.} Used a program that combines science and art to help communicate concepts.}
+\cvitem{2011-2013}{\textbf{Falmouth Public School Science Fair.} Judged science fair projects for middle and high school aged children.}
+\cvitem{2012}{\textbf{STEM for Girls at the New England Aquarium.} Mentored and volunteered for a program designed to encourage girls from underrepresented minorities to pursue math and science.}
+
+
+%%%------------------------PROFESSIONAL DEVELOPMENT -----------------------%%%
+
+
+\section{Professional Development and Workshop Participation}
+
+\cvitem{2016}{Participant, National Academies Keck Futures Initiative (NAKFI): Discovering the Deep Blue Sea, Irvine, CA.}
+\cvitem{2016}{Participant, EcoDAS XII: Ecological Dissertations in the Aquatic Sciences, Honolulu, HI.}
+\cvitem{2016}{Invited Participant, Plant Science Research Network Scenario Modeling Workshop, Chevy Chase, MD.}
+\cvitem{2015}{Participant, OCB Scoping Workshop: Trait-based approaches to ocean life, Waterville Valley, NH.}
+\cvitem{2014}{Participant, OCB Scoping Workshop: Improving predictive biogeochemical models through single cell-based analyses of marine plankton physiological plasticity, genetic diversity and evolutionary processes, Boothbay, ME.}
+
+%%%------------------------SKILLS-----------------------%%%
+
+
+\section{Skills and Certifications}
+
+\cvitem{\textbf{Certifications}}{PADI SCUBA Open Water, Software Carpentry Instructor Training}
+\cvitem{\textbf{Computation}}{Python (language of choice), Matlab, R, shell script}
+% \cvitem{\textbf{Lab Techniques}}{Aseptic cell culturing, Nucleic acid extraction, PRC, pPCR, Sequencing, Flow cytometry, Microscopy}
+\cvitem{\textbf{Languages}}{English, French}
+
+\end{document}
