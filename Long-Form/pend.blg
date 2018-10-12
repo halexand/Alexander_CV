@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: pend.aux
+The style file: cv.bst
+Database file #1: pending.bib
+Warning--empty journal in Alexander2018b
+Warning--empty journal in Alexander2016
+Warning--empty journal in Wurch2016
+You've used 4 entries,
+            1826 wiz_defined-function locations,
+            495 strings with 4565 characters,
+and the built_in function-call counts, 865 in all, are:
+= -- 64
+> -- 50
+< -- 1
++ -- 18
+- -- 14
+* -- 78
+:= -- 141
+add.period$ -- 20
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 50
+empty$ -- 62
+format.name$ -- 14
+if$ -- 178
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 21
+num.names$ -- 4
+pop$ -- 18
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 12
+swap$ -- 18
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 5
+width$ -- 5
+write$ -- 39
+(There were 3 warnings)
