@@ -1,0 +1,177 @@
+%
+% NSF Biographical Sketch: Dr. Harriet Alexander
+%
+% Modified from Theodore P. Pavlic
+%
+
+\documentclass[svgnames,11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\alph{subsection})}
+\usepackage{calc}
+
+\usepackage{lastpage}
+%\newcommand{\pageoflastpage}{Page {\thepage} of \pageref*{LastPage}}
+%\newcommand{\pageoflastpage}{{\thepage} of \pageref*{LastPage}}
+\newcommand{\pageoflastpage}{}
+
+% Redefine the plain pagestyle for the title page
+\makeatletter
+\let\oldps@plain\ps@plain
+\renewcommand{\ps@plain}{\oldps@plain%
+\renewcommand{\@evenfoot}{\hfil\pageoflastpage\hfil}%
+\renewcommand{\@oddfoot}{\@evenfoot}}
+\makeatother
+
+% % Use fancy for non-title pages
+% \usepackage{fancyhdr}
+% \fancyhead{}
+% \fancyfoot{}
+% \cfoot{\pageoflastpage}
+% \pagestyle{fancy}
+
+\usepackage{xspace}
+
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{varioref}
+\usepackage[%
+        colorlinks=true,urlcolor=,
+        pdfpagelabels=true,hypertexnames=true,
+        plainpages=false,naturalnames=true,
+        ]{hyperref}
+%
+\usepackage{url}
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin={\bibhang+\widthof{[9]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+
+\usepackage{multibib}
+% \newcites{relevant,other}{{Publications},{Publications}}
+
+%Number bibliography with periods
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}}
+\makeatother
+% bold name in citations or wherever it appears
+\def\FormatName#1{%
+  \def\myname{Alexander H}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \textbf{#1}%
+  \else
+    #1%
+  \fi
+}
+
+
+\date{}
+\author{}
+
+\hypersetup{%
+        pdfsubject={NSF Biographical Sketch of ~Harriet ~Alexander},
+        pdfauthor={~Harriet ~Alexander},
+        pdftitle={NSF Biographical Sketch of ~Harriet ~Alexander},
+        pdfkeywords={}
+        }
+
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+
+\begin{document}
+
+%% Biographic information
+
+\section*{}
+\textbf{\large{Harriet Alexander, PhD}}\\
+Biology Department\\
+Woods Hole Oceanographic Institution\\
+266 Woods Hole Rd., MS\# 51\\
+Woods Hole, MA 02543\\
+Phone: (508)289-3565\\
+E-mail: halexander@whoi.edu\\
+
+
+\subsection*{Professional Preparation}
+
+\begin{tabular}{ l l l }
+ Wellesley College & Biological Sciences & B.A., 2010 \\
+ MIT/Woods Hole Oceanographic Institution & Biological Oceanography & Ph.D. 2016 \\
+ % Lamont-Doherty Earth Observatory, Columbia University & Postdoctoral Researcher & 2016 \\
+ % University of California, Davis & Postdoctoral Fellow & 2016 \\
+\end{tabular}
+
+    % \textbf{B.A.}, Biological Sciences, Wellesley College, Wellesley, MA, 2010
+    %     \\
+    % \textbf{Ph.D.}, Biological Oceanography, Joint Program in Oceanography \/ Applied Ocean Science and Engineering, Massachusetts Institute of Technology and Woods Hole Oceanographic Institution, Woods Hole, MA, 2016
+    %     \\
+
+\subsection{Appointments}
+
+\begin{itemize}[label={\quad 9999--9999:},leftmargin=*,itemsep=0pt]
+
+    \item[2018--present:]
+        \textbf{Assistant Scientist},
+        Woods Hole Oceanographic Institution,
+        Woods Hole, MA
+
+    \item[2016--2018:]
+        \textbf{Postdoctoral Fellow},
+        University of California, Davis, CA
+
+    \item[2002, 2003:]
+        \textbf{Postdoctoral Researcher},
+        Lamont-Doherty Earth Observatory, Columbia University
+        Palisades, NY
+
+\end{itemize}
+
+\subsection{Ten Relevant Products}
+\vspace*{-1cm}
+\renewcommand\refname{}
+ \nocite{Hu2018, Rouco2018, Haley2017, Harke2017, Moniruzzaman2017, Guy-Haim2017, Caron2016, Alexander2015a, Alexander2015b, Alexander2012, Dyhrman2012}
+\bibliographystyle{cv}
+\bibliography{publications}
+
+\subsection{Synergistic Activities}
+
+\begin{bibenum}[itemsep=4pt]
+
+    \item \textbf{Teaching / Outreach:} (i) Lead instructor for Software Carpentry Workshops at WHOI (2015) and McMurdo Station (2018) (ii) Instructor and co-developer of Environmental Metagenomics Workshops held at UCSD (2016), UCD (2017), UCSC (2017), and Centro de Investigaci\'{o}n Cient\'{i}fica y de Educaci\'{o}n Superior de Ensenada (2017) (iii) entor for ASLO Multicultural Program (mentored group of 4 undergraduates during the meeting) (2017)
+
+    \item \textbf{Fellowship Awards:} (i) National Defense Science and Engineering Fellowship (2011-2014) (ii) National Science Foundation Graduate Research Fellowship (\textit{declined})
+
+    \item \textbf{Session Chair:} (i) ASLO Aquatic Sciences Meeting (Honolulu, HI, 2017) (ii) SciPy (Scientific Python Computing) Meeting (Austin, TX, 2016)
+
+    \item \textbf{Reviewer:} NSF Career Award, NDSEG Fellowship, ISME Journal, Limnology and Oceanography, Journal of Phycology, Journal of Heredity, Environmental Microbiology
+
+    \item \textbf{Participation in Competitive Professional Development Programs:}
+    (i) NSF Antarctic Biology Training Program (2018) (ii) National Academy Keck Futures Initiative (NAKFI): Discovering the Deep Blue Sea (2016) (iii)  Ecological Dissertations in the Aquatic Sciences (2016)
+
+\end{bibenum}
+
+\end{document}
