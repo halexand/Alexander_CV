@@ -18,5 +18,5 @@
 # BibTeX
 *.bbl
 *.blg
-
+*.fls
 .DS_Store
