@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{OSM2018}
+\FormatName{Alexander H}, \FormatName{Brown CT}.
+\newblock {Reference- and assembly-independent, scalable discovery of shared
+  content between metagenomic datasets}. Ocean Sciences, Portland, OR. February
+  2018.
+
 \bibitem{OSM2016}
 \FormatName{Alexander H}, \FormatName{Durkin C}, \FormatName{Dyhrman ST}.
 \newblock {Combining \textit{in situ} and culture-based `omic and

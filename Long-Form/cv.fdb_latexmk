@@ -1,38 +1,38 @@
 # Fdb version 3
-["bibtex cv"] 1539286015 "cv.aux" "cv.bbl" "cv" 1539286041
+["bibtex cv"] 1545015283 "cv.aux" "cv.bbl" "cv" 1545015461
   "./cv.bst" 1457554784 21542 75fd3cd7b454ab28058a293b12673c0d ""
-  "cv.aux" 1539286039 2846 a85eca248f5572c7d4997d88c2f4febc ""
+  "cv.aux" 1545015459 2948 15d78035d4d05a6a6acc42d2c71508a9 ""
   "cv.bcf" 0 -1 0 ""
-  "pending.bib" 1529702671 1562 2d0cd516a84b5e1fcc0669fea3972558 ""
-  "publications.bib" 1539281528 12453 c7d692b168bc5e1eb780623b0077363e ""
+  "pending.bib" 1545015060 903 e567b8f813367ff4d802c2954b13c377 ""
+  "publications.bib" 1545014980 13713 4b7ba3ea533630fe4393b324f27543c5 ""
   (generated)
-  "cv.blg"
   "cv.bbl"
-["bibtex ipr"] 1529702565 "ipr.aux" "ipr.bbl" "ipr" 1539286041
+  "cv.blg"
+["bibtex ipr"] 1529702565 "ipr.aux" "ipr.bbl" "ipr" 1545015461
   "./cv.bst" 1457554784 21542 75fd3cd7b454ab28058a293b12673c0d ""
   "invitedpresentations.bib" 1501220503 552 39a2e73a9925b961ef6888106d70dc06 ""
-  "ipr.aux" 1539286039 100 895879b94e0ee48c4c86d7fbc91c56bb ""
+  "ipr.aux" 1545015459 100 895879b94e0ee48c4c86d7fbc91c56bb ""
   "ipr.bcf" 0 -1 0 ""
   (generated)
-  "ipr.blg"
   "ipr.bbl"
-["bibtex pend"] 1529702565 "pend.aux" "pend.bbl" "pend" 1539286041
+  "ipr.blg"
+["bibtex pend"] 1545015278 "pend.aux" "pend.bbl" "pend" 1545015461
   "./cv.bst" 1457554784 21542 75fd3cd7b454ab28058a293b12673c0d ""
-  "pend.aux" 1539286039 234 9e0d5425f4f271fa62925de379c6595b ""
+  "pend.aux" 1545015459 130 44ec3610b0d3300a127aae810d97526e ""
   "pend.bcf" 0 -1 0 ""
-  "pending.bib" 1529702671 1562 2d0cd516a84b5e1fcc0669fea3972558 ""
+  "pending.bib" 1545015060 903 e567b8f813367ff4d802c2954b13c377 ""
   (generated)
   "pend.blg"
   "pend.bbl"
-["bibtex pr"] 1529702565 "pr.aux" "pr.bbl" "pr" 1539286041
+["bibtex pr"] 1545015456 "pr.aux" "pr.bbl" "pr" 1545015461
   "./cv.bst" 1457554784 21542 75fd3cd7b454ab28058a293b12673c0d ""
-  "pr.aux" 1539286039 382 5901c112c54eca19a3e7de2c94d8e213 ""
+  "pr.aux" 1545015459 404 0e3ebd73ca4c5339a7eb1fbc18b0c029 ""
   "pr.bcf" 0 -1 0 ""
-  "presentations.bib" 1501220546 4424 2e4c21e76d5a44cdc431a0b04fa555de ""
+  "presentations.bib" 1545015426 4682 773267ecaad462f362dd274163b265bd ""
   (generated)
-  "pr.bbl"
   "pr.blg"
-["pdflatex"] 1539286037 "cv.tex" "cv.pdf" "cv" 1539286041
+  "pr.bbl"
+["pdflatex"] 1545015457 "cv.tex" "cv.pdf" "cv" 1545015461
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -206,21 +206,21 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1466622884 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1463979169 3873397 413fbfbbedb8e719ddc392043a7add02 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "cv.aux" 1539286039 2846 a85eca248f5572c7d4997d88c2f4febc ""
-  "cv.bbl" 1539286015 6580 8ae1fd73f11b32f0b11addb727343daa "bibtex cv"
-  "cv.out" 1539286039 2516 dde823ecf23477d6cd692c463fad179b ""
-  "cv.tex" 1539286037 9624 5c362365e7b2f1e92c2a6e000dbf8463 ""
-  "ipr.aux" 1539286039 100 895879b94e0ee48c4c86d7fbc91c56bb ""
-  "ipr.bbl" 1529702689 541 4a7b4c125f1f3165b293751df9b77846 "bibtex ipr"
-  "pend.aux" 1539286039 234 9e0d5425f4f271fa62925de379c6595b ""
-  "pend.bbl" 1529702688 1184 671b068a5d3a89907ef6d4b2cf70cba5 "bibtex pend"
-  "pr.aux" 1539286039 382 5901c112c54eca19a3e7de2c94d8e213 ""
-  "pr.bbl" 1529702688 4227 e1a20015cf0a1c1b252ea4bd392624ef "bibtex pr"
+  "cv.aux" 1545015459 2948 15d78035d4d05a6a6acc42d2c71508a9 ""
+  "cv.bbl" 1545015283 7152 d646d94294b0c4a78a267c9b31c192be "bibtex cv"
+  "cv.out" 1545015459 2516 f24f50a57123b4642dc7d7931312fa88 ""
+  "cv.tex" 1545015451 9668 b1d83f16c3f982db95c63d7c9ea1264c ""
+  "ipr.aux" 1545015459 100 895879b94e0ee48c4c86d7fbc91c56bb ""
+  "ipr.bbl" 1545015066 541 4a7b4c125f1f3165b293751df9b77846 "bibtex ipr"
+  "pend.aux" 1545015459 130 44ec3610b0d3300a127aae810d97526e ""
+  "pend.bbl" 1545015279 636 9bc222c79f6203bda6d53ce9c53974bb "bibtex pend"
+  "pr.aux" 1545015459 404 0e3ebd73ca4c5339a7eb1fbc18b0c029 ""
+  "pr.bbl" 1545015457 4460 0db98860f6a1e19a36050ae8da78435a "bibtex pr"
   (generated)
   "cv.pdf"
   "cv.log"
   "cv.aux"
   "pr.aux"
-  "pend.aux"
   "cv.out"
+  "pend.aux"
   "ipr.aux"

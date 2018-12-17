@@ -1,5 +1,19 @@
 \begin{thebibliography}{10}
 
+\bibitem{Alexander2018}
+\FormatName{Alexander H}, \FormatName{Johnson LK}, \FormatName{Brown CT}.
+\newblock (2018). {Keeping it light: (Re)analyzing community-wide datasets
+  without major infrastructure}.
+\newblock \emph{GigaScience}.
+\newblock doi:10.1093/gigascience/giy159.
+
+\bibitem{Johnson2018}
+\FormatName{Johnson LK}, \FormatName{Alexander H}, \FormatName{Brown CT}.
+\newblock (2018). {Re-assembly, quality evaluation, and annotation of 678
+  microbial eukaryotic reference transcriptomes}.
+\newblock \emph{GigaScience}.
+\newblock doi:10.1093/gigascience/giy158.
+
 \bibitem{Hu2018}
 \FormatName{Hu SK}, \FormatName{Liu Z}, \FormatName{Alexander H},
   \FormatName{Campbell V}, \FormatName{Connell PE}, \FormatName{Dyhrman ST},
