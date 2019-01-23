@@ -58,7 +58,7 @@
         itemsep=\bibsep,parsep=\z@,partopsep=0pt,
         topsep=0pt}
 \newlist{bibenum}{enumerate}{3}
-\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
+\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},
         itemindent=-\bibhang,
         itemsep=\bibsep,parsep=\z@,partopsep=0pt,
         topsep=0pt}
@@ -69,9 +69,32 @@
 \makeatother
 
 
-\usepackage{multibib}
-\newcites{relevant,other}{{relevant},{other}}
+\usepackage[resetlabels]{multibib}
+\newcites{Relevant}{Closely related publications}
+\newcites{Other}{Other relevant publications}
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}%
+  \setlength{\parskip}{0pt}%
+  \setlength{\labelwidth}{0pt}%
+  \setlength{\labelsep}{4pt}%
+  \setlength{\itemindent}{0em}%
+  \setlength{\itemsep}{4pt}%
+  \setlength{\leftmargin}{\bibhang+\widthof{[999]}}%
+}
 
+\usepackage{sectsty}
+\subsubsectionfont{\normalfont\itshape}
+
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{thebibliography}{%
+  \let\origsection\section% save the original definition of \section
+  \let\section\subsubsection%  make \section behave like \subsection
+
+}
+\AfterEndEnvironment{thebibliography}{%
+  \let\section\origsection% restore the original definition of \section
+}
 %Number bibliography with periods
 
 \makeatletter
@@ -129,25 +152,28 @@ E-mail: halexander@whoi.edu\\
 
 \begin{itemize}[label={\quad 9999--9999:},leftmargin=*,itemsep=0pt]
 
-    \item[2018--present ]
+    \item[2018--present]
         \textbf{Assistant Scientist},
         Biology Department, Woods Hole Oceanographic Institution, Woods Hole, MA
 
 \end{itemize}
 
-\subsection*{\textsc{Ten Relevant Products}}
-\vspace*{-1cm}
-\renewcommand\refname{}
+\subsection*{\textsc{Publications}}
+% \vspace*{-1cm}
 
- \nocite{Alexander2018, Johnson2018, Hu2018, Haley2017, Harke2017, Moniruzzaman2017, Alexander2015a, Alexander2015, Alexander2012, Dyhrman2012}
-\bibliographystyle{cv}
-\bibliography{publications}
+\nociteRelevant{Alexander2018, Johnson2018, Alexander2015a, Alexander2015, Alexander2012}
+\bibliographystyleRelevant{cv}
+\bibliographyRelevant{publications}
+
+\nociteOther{Hu2018, Haley2017, Harke2017, Moniruzzaman2017, Dyhrman2012}
+\bibliographystyleOther{cv}
+\bibliographyOther{publications}
 
 \subsection*{\textsc{Synergistic Activities}}
 
 \begin{bibenum}[itemsep=4pt]
 
-    \item \textbf{Teaching / Outreach:} (i) Lead instructor for Software Carpentry Workshops at WHOI (2015) and McMurdo Station (2018) (ii) Instructor and co-developer of Environmental Metagenomics Workshops held at UCSD (2016), UCD (2017), UCSC (2017), and Centro de Investigaci\'{o}n Cient\'{i}fica y de Educaci\'{o}n Superior de Ensenada (2017) (iii) entor for ASLO Multicultural Program (mentored group of 4 undergraduates during the meeting) (2017)
+    \item \textbf{Teaching / Outreach:} (i) Lead instructor for Software Carpentry Workshops at WHOI (2015) and McMurdo Station (2018) (ii) Instructor and co-developer of Environmental Metagenomics Workshops held at UCSD (2016), UCD (2017), UCSC (2017), and Centro de Investigaci\'{o}n Cient\'{i}fica y de Educaci\'{o}n Superior de Ensenada (2017) (iii) Mentor for ASLO Multicultural Program (2017)
 
     \item \textbf{Fellowship Awards:} (i) National Defense Science and Engineering Fellowship (2011-2014) (ii) National Science Foundation Graduate Research Fellowship (\textit{declined})
 
