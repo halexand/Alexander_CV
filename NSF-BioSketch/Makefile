@@ -15,9 +15,10 @@ clean:
 
 	mv tmp2 publications.bib
 
-nsf-biosketch.pdf: nsf-biosketch.tex publications.bib nsf-biosketch.aux
+nsf-biosketch.pdf: nsf-biosketch.tex publications.bib
 	TEXINPUTS="texmf:" pdflatex nsf-biosketch.tex
-	bibtex nsf-biosketch
+	bibtex Relevant
+	bibtex Other
 	TEXINPUTS="texmf:" pdflatex nsf-biosketch.tex
 	TEXINPUTS="texmf:" pdflatex nsf-biosketch.tex
 
