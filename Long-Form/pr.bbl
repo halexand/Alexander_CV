@@ -1,10 +1,19 @@
 \begin{thebibliography}{10}
 
-\bibitem{OSM2018}
+\bibitem{GRC2019}
 \FormatName{Alexander H}, \FormatName{Brown CT}.
 \newblock {Reference- and assembly-independent, scalable discovery of shared
   content between metagenomic datasets}. Ocean Sciences, Portland, OR. February
   2018.
+
+\bibitem{OSM2018}
+\FormatName{Alexander H}, \FormatName{Phillips J}, \FormatName{Thomas M},
+  \FormatName{Chisholm C}, \FormatName{Craft K}, \FormatName{Galindo V},
+  \FormatName{Neveu M}, \FormatName{Laney S}, \FormatName{Karenz D},
+  \FormatName{Manahan D}.
+\newblock {Antarctic Biology Training II: Automatic image classification and
+  colony morphology of Phaeocystis antarctica}. Polar Marine Science GRC,
+  Lucca, Italy. March 2019.
 
 \bibitem{OSM2016}
 \FormatName{Alexander H}, \FormatName{Durkin C}, \FormatName{Dyhrman ST}.

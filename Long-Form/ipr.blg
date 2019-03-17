@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ipr.aux
 The style file: cv.bst
 Database file #1: invitedpresentations.bib
-You've used 2 entries,
+You've used 3 entries,
             1826 wiz_defined-function locations,
-            486 strings with 4052 characters,
-and the built_in function-call counts, 244 in all, are:
-= -- 18
-> -- 10
+            491 strings with 4127 characters,
+and the built_in function-call counts, 356 in all, are:
+= -- 27
+> -- 15
 < -- 0
-+ -- 4
-- -- 2
-* -- 14
-:= -- 51
-add.period$ -- 10
-call.type$ -- 2
-change.case$ -- 2
++ -- 6
+- -- 3
+* -- 20
+:= -- 72
+add.period$ -- 15
+call.type$ -- 3
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 14
-empty$ -- 19
-format.name$ -- 2
-if$ -- 43
+cite$ -- 3
+duplicate$ -- 21
+empty$ -- 28
+format.name$ -- 3
+if$ -- 64
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 3
 missing$ -- 0
-newline$ -- 11
-num.names$ -- 2
-pop$ -- 2
+newline$ -- 15
+num.names$ -- 3
+pop$ -- 3
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2
+skip$ -- 3
 stack$ -- 0
 substring$ -- 0
-swap$ -- 6
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 3
-write$ -- 20
+while$ -- 3
+width$ -- 4
+write$ -- 29
