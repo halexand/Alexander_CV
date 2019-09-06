@@ -70,8 +70,8 @@
 
 
 \usepackage[resetlabels]{multibib}
-\newcites{Relevant}{Closely related publications}
-\newcites{Other}{Other relevant publications}
+\newcites{Relevant}{ }
+\newcites{Other}{ }
 \let\OLDthebibliography\thebibliography
 \renewcommand\thebibliography[1]{
   \OLDthebibliography{#1}%
@@ -98,7 +98,7 @@
 %Number bibliography with periods
 
 \makeatletter
-\renewcommand\@biblabel[1]{\textbf{#1.}}
+\renewcommand\@biblabel[1]{\textbf{}}
 \makeatother
 % bold name in citations or wherever it appears
 \def\FormatName#1{%
@@ -131,6 +131,7 @@
 
 \section*{}
 \textbf{\large{Harriet Alexander, PhD}}\\
+Assistant Scientist\\
 Biology Department\\
 Woods Hole Oceanographic Institution\\
 266 Woods Hole Rd., MS\# 51\\
@@ -158,45 +159,43 @@ E-mail: halexander@whoi.edu\\
 
 \end{itemize}
 
-\subsection*{\textsc{Publications}}
-% \vspace*{-1cm}
+\subsection*{\textsc{Awards}}
 
-\nociteRelevant{Alexander2018, Hu2018, Alexander2015a, Alexander2015, Alexander2012}
+\begin{itemize}[label={9999:},leftmargin=*,itemsep=0pt]
+\item[\textbf{2019}] UNOLS Chief Scientist Training Cruise Participant
+\item[\textbf{2018}] GigaScience First Palace Paper Prize ICG13
+\item[\textbf{2016}] Ecological Dissertations in the Aquatic Sciences
+\item[\textbf{2016}] National Academy Keck Futures Initiative (NAKFI): Discovering the Deep Blue Sea Participant
+\item[\textbf{2011}] National Defense Science and Engineering Fellowship
+\item[\textbf{2011}] National Science Foundation Graduate Research Fellowship \textit{declined}
+\item[\textbf{2010}] Lucy Allen Branch Prize in Natural History
+\item[\textbf{2010}] Jane Harris Schneider Prize in Sculpture
+\end{itemize}
+
+\subsection*{\textsc{Most Significant Publications}}
+\vspace*{-0.75cm}
+\nociteRelevant{Alexander2015a, Alexander2015, Dyhrman2012, Alexander2018, Hu2018,  Alexander2012, Johnson2018, Haley2017, Harke2017, Moniruzzaman2017, Kujawinski2017, Durden2017, Caron2017}
 \bibliographystyleRelevant{cv}
 \bibliographyRelevant{publications}
 
-\nociteOther{Johnson2018, Haley2017, Harke2017, Moniruzzaman2017, Dyhrman2012}
+\subsection*{\textsc{Acive Collaborators and Co-authors in 2018/2019}}
+M. Pachiadaki (WHOI), M. Brosnahan (WHOI), S. Clayton (ODU), C. Durkin (MLML), S. Dyhrman (LDEO), L. Wurch (JMU), K. Frischkorn (Nature Geosciences), S. Haley (LDEO), M. Rouco (LDEO), M. Harke (LDEO), S. Hu (WHOI), C. T. Brown (UCD), L. Johnson (UCD), C. Gobler (Stony Brook), K. Heidelbreg (USC), D. Caron (USC), A. Worden (MBARI), C. Fiore (Appalachian State), M. Soule (WHOI), E. Kujawinski (WHOI), A. Juhl (WHOI), K. Longnecker (WHOI)
+
+
+\subsection*{\textsc{Summary of current and past research}}
+My research is broadly centered around understanding and characterizing the interplay of phenotypic plasticity and diversity in the ocean with a focus on eukaryotic plankton (particularly protists). Much of my research has leveraged meta-omic data to derive insights into the physical and chemical drivers and biological interactions that govern the ecology of these organisms. In particular, I have done research to better understanding bloom initiation in the phytoplankton at a molecular level, examining the roles of competition (Alexander et al., 2015a) and functional group traits (Alexander et al., 2015b). I have also More recently, I have begun to work within the sphere of computational biology as it pertains to environmental microbiology, developing scale-able, reproducible pipelines and tools for transcriptome assembly (e.g. Johnson, Alexander, Brown, 2019), the recovery eukaryotic metagenome assembled genome from metagenomes (Alexander and Hu, in prep.), and eukaryotic metatranscriptomics.
+
+
+
+\subsection*{\textsc{Five most relevant publications to this proposal}}
+\vspace*{-0.75cm}
+
+\nociteOther{Alexander2015a, Alexander2015, Johnson2018, Haley2017, Harke2017}
 \bibliographystyleOther{cv}
 \bibliographyOther{publications}
 
-\subsection*{\textsc{Synergistic Activities}}
 
-\begin{bibenum}[itemsep=4pt]
 
-    \item \textbf{Teaching / Outreach:} Lead instructor for Software Carpentry Workshops at WHOI (2015) and McMurdo Station (2018); Instructor and co-developer of Environmental Metagenomics Workshops held at UCSD (2016), UCD (2017), UCSC (2017), and Centro de Investigaci\'{o}n Cient\'{i}fica y de Educaci\'{o}n Superior de Ensenada (2017); Mentor for ASLO Multicultural Program (2017)
-
-    \item \textbf{Fellowship Awards:} National Defense Science and Engineering Fellowship (2011-2014); National Science Foundation Graduate Research Fellowship (\textit{declined})
-
-    \item \textbf{Session Chair:} ASLO Aquatic Sciences Meeting (Honolulu, HI, 2017); SciPy (Scientific Python Computing) Meeting (Austin, TX, 2016)
-
-    \item \textbf{Reviewer:} NSF Career Award, NSF GRFP, NDSEG Fellowship, ISME Journal, Limnology and Oceanography, Journal of Phycology, Journal of Heredity, Environmental Microbiology, Moore Foundation
-
-    \item \textbf{Participation in Competitive Professional Development Programs:}  UNOLS Chief Scientist Training Cruise (2019); NSF Antarctic Biology Training Program (2018); National Academy Keck Futures Initiative (NAKFI): Discovering the Deep Blue Sea (2016);  Ecological Dissertations in the Aquatic Sciences (2016)
-
-\end{bibenum}
-
-% \subsection*{\textsc{References}}
-% \begin{bibenum}[itemsep=4pt]
-%
-% \item \textbf{Dr. Sonya Dyhrman}, Professor, Columbia University - Lamont Doherty Earth Observatory
-% \subitem Phone: (845) 365-8165
-% \subitem Email: sdyhrman@ldeo.columbia.edu
-%
-% \item \textbf{Dr. Elizabeth Kujawinski} Associate Scientist, Woods Hole Oceanographic Institution
-% \subitem Phone: (508) 289-3493
-% \subitem Email: ekujawinski@whoi.edu
-%
-% \end{bibenum}
 
 
 \end{document}
