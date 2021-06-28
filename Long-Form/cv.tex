@@ -5,7 +5,7 @@
 \moderncvcolor{grey}
 \usepackage[scale=0.8]{geometry}
 \usepackage{multibib}
-\newcites{ipr,pr,pend}{{InvitedPresentations},{Presentations},{Pending}}
+\newcites{ipr,pr}{{InvitedPresentations},{Presentations}}
 
 % bold name in citations or wherever it appears
 \def\FormatName#1{%
@@ -86,22 +86,14 @@
 
 \renewcommand*{\bibliographyhead}[1]{\subsection{Peer-reviewed}}
 
-\nocite{Alexander2020, Johnson2020, Choi, Bolyen2019, Wurch2019, Alexander2018, Johnson2018, Hu2018, Rouco2018,
+\nocite{mcparland2021osmolyte,Krinos2021,mcparland2021dmsp,fiore2021phosphate,Alexander2020, Johnson2020, Choi, Bolyen2019, Wurch2019, Alexander2018, Johnson2018, Hu2018, Rouco2018,
 Haley2017, Harke2017, Moniruzzaman2017, Kujawinski2017, Guy-Haim2017,Durden2017,
 Caron2016, Rouco2016,
 Alexander2015a, Alexander2015,
 Fischer2014, Alexander2012, Dyhrman2012}
 \bibliographystyle{cv}
-\bibliography{publications,pending}
+\bibliography{publications}
 
-
-%% pending %%
-
-% \renewcommand*{\bibliographyhead}[1]{\subsection{Pending}}
-%
-% \nocitepend{Alexander2016}
-% \bibliographystylepend{cv}
-% \bibliographypend{pending}
 
 %%%------------------------INVITEDPRESENTATIONS-----------------------%%%
 
@@ -135,6 +127,8 @@ Fischer2014, Alexander2012, Dyhrman2012}
 
 
 \section{Teaching Experience}
+\cventry{June 2021}{Instructor}{MBL Physiology Course}{Marine Biological Labratory}{}{Organized and taught and introduction to bioinformatics bootcamp for the MBL Physiology course.}
+\cventry{June 2021}{Instructor and Organizer}{Software Carpentry Workshop}{Woods Hole Oceanographic Institution}{}{Organized and taught Software Carpentry course for  WHOI SSFs and incoming JP students, teaching introductory UNIX shell scripting and Python programming.}
 \cventry{June 2020}{Instructor}{Software Carpentry Workshop}{Woods Hole Oceanographic Institution}{}{Organized and taught Software Carpentry course for  WHOI SSFs and incoming JP students, teaching introductory UNIX shell scripting, Python programming, and Git versioning.}
 \cventry{Fall 2019}{Instructor}{12.756, Environmental Bioinformatics}{MIT-WHOI Joint Program}{}{Co-created and instructed 12-credit graduate course on environmental and non-model bioinformatic approaches with M. Pachiadaki and C. Tepolt. }
 \cventry{July 2017}{Lead Instructor}{Environmental Metagenomics Workshop}{Data Intensive Biology Summer Institute}{}{Organized and taught workshop on environmental metagenomic data analysis and interpretation.}
