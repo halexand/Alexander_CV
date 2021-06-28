@@ -15,10 +15,9 @@ clean:
 	
 	mv tmp2 publications.bib
 
-cv.pdf: cv.tex publications.bib cv.bst cv.aux pending.bib presentations.bib publications.bib invitedpresentations.bib 
+cv.pdf: cv.tex publications.bib cv.bst cv.aux presentations.bib publications.bib invitedpresentations.bib 
 	TEXINPUTS="texmf:" pdflatex cv.tex
 	bibtex cv
-	bibtex pend
 	bibtex pr
 	bibtex ipr
 	TEXINPUTS="texmf:" pdflatex cv.tex
