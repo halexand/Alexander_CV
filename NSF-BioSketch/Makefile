@@ -16,10 +16,10 @@ clean:
 	mv tmp2 publications.bib
 
 nsf-biosketch.pdf: nsf-biosketch.tex publications.bib
-	TEXINPUTS="texmf:" pdflatex nsf-biosketch.tex
+	TEXINPUTS="texmf:" xelatex nsf-biosketch.tex
 	bibtex Relevant
 	bibtex Other
-	TEXINPUTS="texmf:" pdflatex nsf-biosketch.tex
-	TEXINPUTS="texmf:" pdflatex nsf-biosketch.tex
+	TEXINPUTS="texmf:" xelatex nsf-biosketch.tex
+	TEXINPUTS="texmf:" xelatex nsf-biosketch.tex
 
 	open nsf-biosketch.pdf -a /Applications/Preview.app
