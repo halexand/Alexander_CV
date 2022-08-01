@@ -23,4 +23,4 @@ cv.pdf: cv.tex publications.bib cv.bst cv.aux presentations.bib publications.bib
 	TEXINPUTS="texmf:" pdflatex cv.tex
 	TEXINPUTS="texmf:" pdflatex cv.tex
 	
-	open cv.pdf -a /Applications/Preview.app
+	open cv.pdf 
