@@ -1,0 +1,318 @@
+\documentclass{resume}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{lmodern}
+
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\name{Harriet Alexander}
+\address{ (508)289-3565 | halexander@whoi.edu | AlexanderLabWHOI.github.io}
+\address{ 266 Woods Hole Rd. MS\# 51, Woods Hole, MA 02543  }
+
+
+\usepackage{multibib}
+\newcites{ipr,pr}{{ InvitedPresentations},{Presentations}}
+
+\newenvironment{tabbed}{\vspace{-20pt}\begin{adjustwidth}{1cm}{0.2cm}}{\end{adjustwidth}}
+
+
+\def\nameskip{\bigskip}
+\def\sectionskip{\medskip}
+
+% bold name in citations or wherever it appears
+ % \def\FormatName#1{%
+ %   \def\myname{Alexander H}%
+ %   \edef\name{#1}%
+ %   \ifx\name\myname
+ %     \textbf{#1}%
+ %   \else
+ %     #1%
+ %   \fi
+ % }
+
+\usepackage[utf8]{inputenc}
+
+
+%invert the numbers
+\usepackage{etaremune}
+\makeatletter
+\long\def\thebibliography#1{%
+  \section*{\refname}%
+  \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}
+  \settowidth{\dimen0}{\@biblabel{#1}}%
+  \setlength{\dimen2}{\dimen0}%
+  \addtolength{\dimen2}{\labelsep}
+  \sloppy
+  \clubpenalty 4000
+  \@clubpenalty
+  \clubpenalty
+  \widowpenalty 4000
+  \sfcode `\.\@m 
+  \renewcommand{\labelenumi}{\@biblabel{\theenumi}} % labels like [3], [2], [1]
+  \begin{etaremune}[labelwidth=\dimen0,leftmargin=\dimen2]\@openbib@code
+}
+\def\endthebibliography{\end{etaremune}}
+\def\@bibitem#1{%
+  \item \if@filesw\immediate\write\@auxout{\string\bibcite{#1}{\the\value{enumi}}}\fi\ignorespaces
+  }
+
+\makeatother
+
+
+
+
+
+\begin{document}
+\fontfamily{lmss}
+
+  \begin{rSection}{Education}
+  
+    {\textbf{PhD, Biological Oceanography}, MIT-WHOI Joint Program, Cambridge / Woods Hole, MA} \hfill {\em 2016} \\ 
+    { Advisor: Dr. Sonya Dyhrman }  
+    
+    \smallskip
+    
+    {\textbf{BA, Biological Sciences}, Wellesley College, Wellesley, MA} \hfill {\em 2010} \\ 
+     {Departmental Honors in Biological Sciences, Minor in Mathematics, {\textit{cum laude}}}
+    
+    
+  \end{rSection}
+
+  \begin{rSection}{Professional Experience}
+  
+    {\textbf{Assistant Scientist}, Biology Department, Woods Hole Oceanographic Institution} \hfill {\em 2018-present}\\
+    {Woods Hole, MA}
+    
+    \smallskip
+    
+    {\textbf{Postdoctoral Fellow}, University of California, Davis, Davis, CA} \hfill {\em 2016-2018} \\
+    {Advisor: Dr. C. Titus Brown}
+
+    \smallskip
+    
+    {\textbf{Postdoctoral Investigator}, Lamont-Doherty Earth Observatory, Palisades, NY} \hfill {\em 2016} \\
+    {Advisor: Dr. Sonya Dyhrman}
+    
+  \end{rSection}
+
+\begin{rSection}{Selected Awards and Fellowships}
+	{Simons Early Career Investigator in Marine Microbial Ecology and Evolution Award} \hfill{\em 2022} \\
+	{GigaScience Paper Prize ICG13} \hfill {\em 2018}\\
+	{EMBL Travel Award} \hfill {\em 2016}\\
+	{NSF ECOGEO Workshop Travel Award} \hfill {\em 2015} \\
+	{OCB Trait-based Ecology Conference Travel Award} \hfill {\em 2015}\\
+	{Ocean Life Institute Fellowship} \hfill {\em 2014--2015} \\
+	{OCB Scoping Workshop Travel Award} \hfill {\em 2014}\\
+	{National Defense Science and Engineering Fellowship} \hfill {\em 2011-2014}\\
+	{National Science Foundation Graduate Research Fellowship} \hfill \textit{2011 (declined for NDSEG)}\\
+	{MIT Presidential Fellowship} \hfill {\em 2010--2011}\\
+	{Lucy Allen Branch Prize in Natural History} \hfill {\em 2010}\\
+	{Jane Harris Schneider Prize in Sculpture} \hfill {\em 2010}
+\end{rSection}
+
+\begin{rSection}{Publications}
+	Mentored students and postdocs are \underline{underlined}. * indicates equal contribution and authorship. 
+	\renewcommand\refname{}
+	\vspace{-36pt}
+
+	\nocite{krinos2023reverse, mars2022microbiomes,Cohen2022,Clayton2022,mcparland2021osmolyte, Krinos2021,mcparland2021dmsp,fiore2021phosphate, Alexander2020, Johnson2020, Choi_2020, Bolyen2019, Wurch2019, Alexander2018, Johnson2018, Hu2018, Rouco2018, Haley2017, Harke2017, Moniruzzaman2017, Kujawinski2017, Guy-Haim2017,Durden2017,Caron2016, Rouco2016,Alexander2015a, Alexander2015,Fischer2014, Alexander2012, Dyhrman2012}
+
+	\bibliographystyle{annoated-cv}
+ 	% \bibliographystyle{cv}
+
+	\bibliography{publications}
+
+\end{rSection}
+
+
+\begin{rSection}{Invited Presentations}
+	\renewcommand\refnameipr{}
+	\vspace{-20pt}
+	\nociteipr{*}
+	\bibliographystyleipr{annoated-cv}
+	\bibliographyipr{invitedpresentations}
+
+\end{rSection}
+
+
+\begin{rSection}{Selected Abstracts}
+	\renewcommand\refnamepr{}
+	\vspace{-20pt}
+	\nocitepr{*}
+	\bibliographystylepr{annoated-cv}
+	\bibliographypr{presentations}
+
+\end{rSection}
+
+  \begin{rSection}{Supervision at WHOI}
+  
+      \begin{rSubsection}{\textit{MIT-WHOI Joint Program Graduate Students}}{}{}{}
+          \item  {\textbf{Miah Manning}, June 2023-present.}
+          \item  {\textbf{Jo Hickman}, NSF Graduate Fellow, June 2023-present.}
+    \item  {\textbf{Arianna Krinos}, co-advised with Mick Follows, Computational Science Graduate Fellowship, June 2019-present.}
+        \end{rSubsection}
+      \begin{rSubsection}{\textit{WHOI Postdoctoral Scholars}}{}{}{}
+    \item  {\textbf{Margaret Mars Brisbin}, November 2020-present, co-advised with Mak Saito, WHOI Postdoctoral Scholar and Simons Foundation Postdoctoral Fellow in Marine Microbial Ecology.}
+        \end{rSubsection}
+    \begin{rSubsection}{\textit{Other Students}}{}{}{}
+    \item  {\textbf{Alese Schofield}, CC-CREW, Summer 2022}
+    \item  {\textbf{Patrick White}, Guest Student, MSc Student at University of Alberta, 2021-2023}
+    \item  {\textbf{Celeste Nobrega}, Guest Student, Summer 2021}
+    \item  {\textbf{Kevin Rice}, Guest Student, Summer 2021}
+    \item  {\textbf{Laura Blum}, Summer Student Fellow, Summer 2019}
+        \end{rSubsection}
+      \begin{rSubsection}{Thesis Committees}{}{}{}
+     \item  {\textbf{Serena Sung-Clarke}, MIT Thesis Committee member (MIT-WHOI), 2021-present}
+     \item  {\textbf{Max Jahns}, Thesis Committee member, 2021-present}
+    \item  {\textbf{David Geller-McGrath}, Thesis Committee member , 2019-present}
+    \item  {\textbf{Cynthia Becker}, Thesis Committee member, 2018-2023}
+  \end{rSubsection}
+      \begin{rSubsection}{\textit{Technical Staff}}{}{}{}
+      \item{\textbf{Sara Shapiro}, Research Assistant II, 2021-present}
+\end{rSubsection}
+    
+  \end{rSection}
+  
+  
+\begin{rSection}{Educational Activities}
+    
+    {\textbf{Instructor}, 12.756 Environmental Bioinformatics, MIT-WHOI Joint Program} \hfill {\em Fall 2019-present} \\
+    \begin{tabbed}
+         {Co-created and instructed 12-credit graduate course on environmental and non-model bioinformatic approaches with M. Pachiadaki and C. Tepolt. Taught in alternating years.}  
+    \end{tabbed}
+
+
+   {\textbf{Instructor}, MBL Physiology Course, Marine Biological Laboratory} \hfill {\em June 2021} \\
+    \begin{tabbed}
+         {Organized and taught an introduction to bioinformatics for the MBL Physiology course with a focus on transcriptomics and phylogenetics.}  
+    \end{tabbed}
+
+    {\textbf{Instructor}, Software Carpentry, Woods Hole Oceanographic Institution} \hfill {\em June 2021} \\
+    \begin{tabbed}
+         {Organized and taught Software Carpentry course for WHOI SSFs and incoming JP students, teaching introductory UNIX shell scripting and Python programming.}  
+    \end{tabbed}
+
+    {\textbf{Instructor}, Software Carpentry, Woods Hole Oceanographic Institution} \hfill {\em June 2020} \\
+    \begin{tabbed}
+         {Organized and taught Software Carpentry course for WHOI SSFs and incoming JP students, teaching introductory UNIX shell scripting, Python programming, and Git versioning.}  
+    \end{tabbed}
+
+    {\textbf{Lead Instructor}, Environmental Metagenomics Workshop, Data Intensive Biology Summer Institute } \hfill {\em July 2017} \\
+    \begin{tabbed}
+         {Organized and taught workshop on environmental metagenomic analysis and interpretation.}  
+    \end{tabbed}
+
+    {\textbf{Instructor}, Metagenomics Workshop, University of California, Santa Cruz } \hfill {\em April 2017} \\
+    \begin{tabbed}
+         {Taught workshop on environmental metagenomic analysis and interpretation.}  
+    \end{tabbed}
+
+    {\textbf{Instructor}, Metagenomics Workshop, Scripps Institute of Oceanography} \hfill {\em September 2016} \\
+    \begin{tabbed}
+         {Taught workshop on environmental metagenomic analysis and interpretation.}  
+    \end{tabbed}
+  {\textbf{Instructor}, Software Carpentry, Woods Hole Oceanographic Institution} \hfill {\em September 2015} \\
+    \begin{tabbed}
+         {Organized and taught Software Carpentry course at WHOI, teaching introductory UNIX shell scripting, Python programming, and Git versioning.}  
+    \end{tabbed}
+
+  {\textbf{Teaching Assistant}, Biological Oceanography, MIT-WHOI Joint Program} \hfill {\em Spring 2014} \\
+    \begin{tabbed}
+         {Conducted recitation sections, wrote and graded tests, problem sets, and daily assignments, advised professors on student performance.}  
+    \end{tabbed}
+    
+  {\textbf{Writing Tutor}, Pforzheimer Learning and Teaching Center, Wellesley College} \hfill {\em 2007-2010} \\
+    \begin{tabbed}
+         {Peer tutor trained to assist in all aspects of the writing process-- specialized in writing for the sciences and social sciences.}  
+    \end{tabbed}
+ {\textbf{Math Tutor and Grader}, Mathematics Department, Wellesley College} \hfill {\em 2009-2010} \\
+    \begin{tabbed}
+         {Grader for multivariable calculus and number theory. Tutor and assistant for number theory.}  
+    \end{tabbed}
+\end{rSection}
+
+\begin{rSection}{Professional Activities}
+\\
+
+\textbf{\textit{Woods Hole Oceanographic Institution}}
+
+{\textbf{Co-Chair}, HPC Committee} \hfill {\em 2019-present} \\
+{\textbf{Member}, SciSec} \hfill {\em 2019-2022} \\
+{\textbf{Member}, Biology Chair Search Committee} \hfill {\em 2019} \\ 
+{\textbf{Member}, HPC Committee} \hfill {\em 2018-present} 
+
+\textbf{\textit{Outside WHOI}}
+
+\textbf{Member, BCO-DMO Strategic Planning Committee} \hfill {\em 2019-present}\\
+\textbf{Session Convener, ASLO Meeting}, Co-chair of session titled “Molecular Insights into \hfill {\em 2017} \\ Adaptive Microbial Physiology” at
+ASLO Meeting, Honolulu, HI.\\
+\textbf{Session Convener, SciPy}, Co-chair of mini-symposium on "Computational Reproducibility" \hfill {\em 2016} \\  at
+SciPy, Austin, TX.
+
+\textbf{\textit{Professional Development and Workshop Participation}}
+
+  {\textbf{Participant}, UNOLS Chief Scientist Training Cruise, Honolulu HI.} \hfill {\em 2019} \\
+  {\textbf{Invited Participant}, BioGeoScapes Scoping Workshop, Woods Hole, MA.} \hfill {\em 2018} \\
+  {\textbf{Participant}, National Academies Keck Futures Initiative (NAKFI): Discovering the \hfill {\em Fall 2018}
+    \\  Deep Blue Sea, Irvine, CA.}  \\
+  {\textbf{Participant}, EcoDAS XII: Ecological Dissertations in the Aquatic Sciences, Honolulu, HI.} \hfill {\em 2016} \\
+  {\textbf{Invited Participant}, Plant Science Research Network Scenario Modeling \\ Workshop, Chevy Chase, MD.} \hfill {\em 2016} \\
+  {\textbf{Participant}, OCB Scoping Workshop: Trait-based approaches to ocean life, Waterville Valley, NH.} \hfill {\em 2015} \\
+  {\textbf{Participant}, OCB Scoping Workshop: Improving predictive biogeochemical models \\ through single cell-based analyses of marine plankton, Boothbay, ME.} \hfill {\em 2014} 
+  
+\textbf{\textit{Reviewer}}
+National Science Foundation, NSF Graduate Research Fellowship Program, National Defense Science and Engineering Graduate Fellowshp Program, Moore Foundation, Nature Communications, ISME Journal, Environmental Microbiology, Limnology and Oceanography, Journal of
+Phycology, GigaScience
+
+
+
+\end{rSection}
+
+\begin{rSection}{Research Cruises}
+  {\textbf{UNOLS Chief Scientist Training Cruise; KN19-10}, \textit{R/V Kilo Moana}} \hfill {\em 14-23 June 2019} 
+
+
+  {\textbf{Seasonal Trophic Roles of \textit{Euphasia suberba} (STRES); NBP14-10}, \textit{R/V Palmer}} \hfill {\em December 2014} \\
+    \begin{tabbed}
+         {Chief Scientist: Edward Durbin}  
+    \end{tabbed}
+
+{\textbf{Deep Dissolved Organic Matter (DeepDOM); KN210-04}, \textit{R/V Knorr}} \hfill {\em March-May 2013} \\
+    \begin{tabbed}
+         {Chief Scientists: Elizabeth Kujawinski & Krista Longnecker}  
+    \end{tabbed}
+
+{\textbf{Hawaii Ocean Experiment (HOE-DYLAN 9); KM12-19}, \textit{R/V Kilo Moana}} \hfill {\em August-September 2012} \\
+    \begin{tabbed}
+         {Chief Scientist: Sam Wilson}  
+    \end{tabbed}
+
+    {\textbf{Hawaii Ocean Experiment (HOE-DYLAN 7); KM12-17}, \textit{R/V Kilo Moana}} \hfill {\em August 2012} \\
+    \begin{tabbed}
+         {Chief Scientist: Sonya Dyhrman}  
+    \end{tabbed}
+    
+\end{rSection}
+
+\begin{rSection}{Outreach}
+
+  {\textbf{Skype a scientist}, Skyped directly with various elementary - high school classrooms\hfill {\em 2018-present} \\  to share about research and ocean science.} \\
+  {\textbf{Submerge!}, New York City marine science festival. Designed and manned booth of hands-on\hfill {\em 2014}\\
+activities focused on the biological pump (>4000 in attendance). \\
+  {\textbf{Women in Ocean Engineering}, Volunteered weekends to work with middle school age girls \hfill {\em 2014}\\
+introducing them to engineering concepts in a marine environment. \\
+    {\textbf{Artistic Oceanographer Program}, Combining science and art to teach science concepts. \hfill {\em 2011-2014}\\
+    {\textbf{Falmouth Public School Science Fair}, Judged middle and high school science fair. \hfill {\em 2011-2013}\\
+    {\textbf{STEM for Girls at the New England Aquarium}, Mentored and volunteered for a \hfill {\em 2012}\\ program to encourage girls to pursue math and science. \\
+\end{rSection}
+
+\begin{rSection}{Skills and Certifications}
+\textbf{Certifications} Software Carpentry Instructor Training, PADI SCUBA Open Water\\
+\textbf{Computation} Python (language of choice), Matlab, R, shell script\\
+\textbf{Languages} English, French (conversational)
+\end{rSection}
+
+
+\end{document}
+
